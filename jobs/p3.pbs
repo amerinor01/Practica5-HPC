@@ -1,0 +1,10 @@
+#!/bin/bash
+#PBS -N esqueleto
+#PBS -k eo
+#PBS -l nodes=4:ppn=1
+#PBS -l walltime=00:30:00
+cd $PBS_O_WORKDIR
+pwd                                          ## change to working irectory
+#cat $PBS_NODEFILE >$PBS_O_WORKDIR/$PBS_JOBNAME.n$PBS_JOBID   ## save compute nodes
+#./esqueleto $ARG                                             ## launch the program
+#mv $HOME/$PBS_JOBNAME.* $PBS_O_WORKDIR                       ## move error and output files from HOME to working directory
